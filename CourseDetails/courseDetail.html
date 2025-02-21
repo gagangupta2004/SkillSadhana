@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details - SkillSadhana</title>
+    <link rel="stylesheet" href="courseDetail.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/DashboardPage/Dashboard.html">Dashboard</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <div class="course-container">
+      <!-- Left Side - Course Info -->
+      <div class="course-info">
+        <h1>Mastering AI on AWS: Training AWS Certified AI-Practitioner</h1>
+        <p class="course-description-short">
+          Building AI and Machine Learning Solutions with AWS Services: From
+          Fundamentals to Certification Success.
+        </p>
+        <p><strong>Instructor:</strong> Vivian Aranha</p>
+        <p><strong>Last Updated:</strong> December 2024</p>
+        <p><strong>Language:</strong> English</p>
+
+        <h3>What you'll learn</h3>
+        <ul>
+          <li>Understand Key Concepts of AI and Machine Learning on AWS</li>
+          <li>Build and Deploy AI-Powered Applications on AWS</li>
+          <li>Master AWS AI and Machine Learning Services</li>
+          <li>Prepare for the AWS Certified AI Practitioner Exam</li>
+        </ul>
+      </div>
+
+      <!-- Right Side - Video Card -->
+      <div class="video-card">
+        <div class="video-preview">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5q6W_x-AHRR-1yY-znbBuwB_MWsKPtKJ3ug&s"
+            alt="Course Preview"
+          />
+          <button class="play-button">▶ Preview this course</button>
+        </div>
+
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
+    </div>
+
+    <!--Course content section-->
+    <div class="course-content">
+      <h2>Course Content</h2>
+      <p>5 Sections • 20 Lectures • Total Length: 4h 30m</p>
+      <div class="lesson" onclick="toggleLesson(1)">
+        Introduction to AI & Machine Learning <span class="icon">+</span>
+      </div>
+      <div class="lesson-content" id="lesson-content-1">
+        Introduction to basic AI concepts and ML models.
+      </div>
+      <div class="lesson" onclick="toggleLesson(2)">
+        Getting Started with AWS AI Services <span class="icon">+</span>
+      </div>
+      <div class="lesson-content" id="lesson-content-2">
+        Overview of AWS AI and ML services.
+      </div>
+      <div class="lesson" onclick="toggleLesson(3)">
+        Building AI Models on AWS <span class="icon">+</span>
+      </div>
+      <div class="lesson-content" id="lesson-content-3">
+        Practical guide on training AI models.
+      </div>
+      <div class="lesson" onclick="toggleLesson(4)">
+        Deploying AI Applications <span class="icon">+</span>
+      </div>
+      <div class="lesson-content" id="lesson-content-4">
+        Steps to deploy AI applications.
+      </div>
+      <div class="lesson" onclick="toggleLesson(5)">
+        Preparing for Certification Exam <span class="icon">+</span>
+      </div>
+      <div class="lesson-content" id="lesson-content-5">
+        Exam preparation tips and resources.
+      </div>
+    </div>
+    <!--course Description section-->
+    <div class="course-description">
+      <h2>Course Description</h2>
+      <p>
+        This course provides a comprehensive understanding of AI and machine
+        learning solutions on AWS. Learn how to build, deploy, and manage
+        AI-powered applications using AWS AI services. The course is designed
+        for beginners and professionals looking to enhance their AI skills with
+        AWS tools and techniques. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Laborum tempore ullam est voluptas cumque fugiat
+        veniam dolore quasi dolor ratione? Totam dolorem blanditiis ipsam
+        obcaecati? Eaque explicabo magni consequatur expedita. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Suscipit labore ad maxime iure
+        tenetur quasi quisquam doloremque placeat quas? Necessitatibus qui quas
+        repellendus nostrum commodi nobis consequuntur beatae sequi voluptates.
+      </p>
+    </div>
+    <!--Instructor sections-->
+    <section class="instructor-section">
+      <div class="instructor-container">
+        <div class="instructor-image">
+          <img src="/HomePage/image (1).jpg" alt="Instructor Image" />
+        </div>
+        <div class="instructor-info">
+          <h2>Instructor</h2>
+          <h3><a href="#">Vivian Aranha</a></h3>
+          <p class="instructor-title">
+            AI Specialist | IT Professional Trainer | Principal Engineer
+          </p>
+          <div class="instructor-stats">
+            <span>&#9733; 4.4 Instructor Rating</span>
+            <span>&#9879; 517 Reviews</span>
+            <span>&#128101; 102,191 Students</span>
+            <span>&#128218; 14 Courses</span>
+          </div>
+          <p class="instructor-bio">
+            Vivian Aranha is an experienced technology professional with a
+            strong academic foundation and a passion for innovation in
+            Artificial Intelligence. He earned his Bachelor's degree in
+            Information Technology in 2004, followed by a Master's degree in
+            Computer Science in 2006. Since then, Vivian has accumulated nearly
+            two decades of experience across diverse roles in the tech industry,
+            contributing to cutting-edge projects and technological
+            advancements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SkillSadhana</h2>
+          <p>Your gateway to smart learning & career growth.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@skillsadhana.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Address: Bangalore, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kGU_bHyoW4ITdro3LTbTbmN9RMeZBO70gA&s"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgfKNwFj7O66Qn-tIw87Yzo1A3DNh9rGq5g&s"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SkillSadhana. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!--script for course content section-->
+    <script>
+      function toggleLesson(index) {
+        let content = document.getElementById("lesson-content-" + index);
+        content.style.display =
+          content.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Certifications - SkillSadhana</title>
+    <link rel="stylesheet" href="certificate.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/DashboardPage/Dashboard.html">Dashboard</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <div class="dashboard-header">
+      <img src="#" alt="Profile Image" />
+      <div class="dashboard-header-content">
+        <h1>Welcome , Gagan Gupta</h1>
+        <p>Track your profile dashboard</p>
+      </div>
+    </div>
+    <div class="certification-container">
+      <div class="certification-header">
+        <h1>My Certifications</h1>
+        <span>Total Certificates: <strong>3</strong></span>
+      </div>
+      <div class="certificate-list">
+        <div class="certificate-card">
+          <img src="Certificate.jpg" alt="Certificate 1" />
+          <h3>AI & ML on AWS</h3>
+          <a href="#" class="view-certificate">View Certificate</a>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate.jpg" alt="Certificate 2" />
+          <h3>Full Stack Web Development</h3>
+          <a href="#" class="view-certificate">View Certificate</a>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate.jpg" alt="Certificate 3" />
+          <h3>Data Science with Python</h3>
+          <a href="#" class="view-certificate">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SkillSadhana</h2>
+          <p>Your gateway to smart learning & career growth.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@skillsadhana.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Address: Bangalore, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kGU_bHyoW4ITdro3LTbTbmN9RMeZBO70gA&s"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgfKNwFj7O66Qn-tIw87Yzo1A3DNh9rGq5g&s"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SkillSadhana. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

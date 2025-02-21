@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skillsadhna Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#">Notification</a>
+        <a href="#">Help</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <div class="dashboard-header">
+      <img src="/InstructorDashboard/profile.webp" alt="Profile Image" />
+      <div class="dashboard-header-content">
+        <h1>Welcome , Admin</h1>
+        <p>Track your profile dashboard</p>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <div class="dashboard-content">
+        <div class="dashboard-card">
+          <h3>Enrollment Approval and Management</h3>
+          <p>Track the Approved Enrollment.</p>
+          <a href="#">View</a>
+        </div>
+        <div class="dashboard-card">
+          <h3>Courses Approval and Management</h3>
+          <p>Track the Approved Courses.</p>
+          <a href="#">View</a>
+        </div>
+        <div class="dashboard-card">
+          <h3>Certification Approval</h3>
+          <p>View and Track the Approved Certificates.</p>
+          <a href="#">View </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

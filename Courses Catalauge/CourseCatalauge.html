@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Catalog -SkillSadhana</title>
+    <link rel="stylesheet" href="CourseCatalauge.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search courses..." />
+        <button>Search</button>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/DashboardPage/Dashboard.html">Dashboard</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <div class="catalog">
+      <div class="catalog-header">
+        <h1>Courses Catalogs</h1>
+        <p>
+          Explore our wide range of AI and technology courses designed to keep
+          you ahead.
+        </p>
+      </div>
+      <div class="catalog-content">
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5Qt9PMHtautePLMyITN347Y28RU_iKTIaw&s"
+            alt="Course 1"
+          />
+          <h3>Introduction to AI</h3>
+          <p>
+            Learn the basics of Artificial Intelligence and its applications.
+          </p>
+          <a href="/CourseDetails/courseDetail.html"> View & Enroll </a>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTwLOyWcj1SFgCU68nC0qPgSGYuqk25De-Og&s"
+            alt="Course 2"
+          />
+          <h3>Machine Learning Basics</h3>
+          <p>Dive into the fundamentals of machine learning algorithms.</p>
+          <a href="/CourseDetails/courseDetail.html">View & Enroll</a>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU-Px0ElEQXtwX44xOvb1dBr4TuICSHnezYw&s"
+            alt="Course 3"
+          />
+          <h3>Deep Learning Mastery</h3>
+          <p>
+            Master the concepts and tools of deep learning with hands-on
+            projects.
+          </p>
+          <a href="/CourseDetails/courseDetail.html">View & Enroll</a>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc6rEig9ecnxx3BwmPYyfu28zNUAOitRPgOQ&s"
+            alt="Course 4"
+          />
+          <h3>AI for Business</h3>
+          <p>
+            Learn how to leverage AI to drive business success and innovation.
+          </p>
+          <a href="/CourseDetails/courseDetail.html">View & Enroll</a>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGP8_boeFtawcTfJE4T1uZ_GVL3M2c8EGpMg&s"
+            alt="Course 5"
+          />
+          <h3>Natural Language Processing</h3>
+          <p>Understand and work with NLP tools and techniques.</p>
+          <a href="#">Enroll Now</a>
+        </div>
+        <div class="course-card">
+          <img src="course-image-6.jpg" alt="Course 6" />
+          <h3>AI Ethics</h3>
+          <p>
+            Explore the ethical implications and responsibilities of AI
+            technology.
+          </p>
+          <a href="#">Enroll Now</a>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGP8_boeFtawcTfJE4T1uZ_GVL3M2c8EGpMg&s"
+            alt="Course 5"
+          />
+          <h3>Natural Language Processing</h3>
+          <p>Understand and work with NLP tools and techniques.</p>
+          <a href="#">Enroll Now</a>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGP8_boeFtawcTfJE4T1uZ_GVL3M2c8EGpMg&s"
+            alt="Course 5"
+          />
+          <h3>Natural Language Processing</h3>
+          <p>Understand and work with NLP tools and techniques.</p>
+          <a href="#">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SkillSadhana</h2>
+          <p>Your gateway to smart learning & career growth.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@skillsadhana.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Address: Bangalore, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kGU_bHyoW4ITdro3LTbTbmN9RMeZBO70gA&s"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgfKNwFj7O66Qn-tIw87Yzo1A3DNh9rGq5g&s"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SkillSadhana. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

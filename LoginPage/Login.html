@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - SkillSadhana</title>
+    <link rel="stylesheet" href="Login.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/HomePage/index.html">Home</a>
+        <a href="/AboutPage/about.html">About</a>
+        <a href="/HelpSupport/helpSupport.html">Help</a>
+        <a href="/LoginPage/Login.html">Login</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <div class="Login-container">
+      <div class="Login-box">
+        <h1>Login an Account</h1>
+        <form action="#" method="POST">
+          <div class="input-group">
+            <label for="UserName">Username*</label>
+            <input type="text" id="UserName" name="UserName" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div class="input-group">
+            <label for="role">Role</label>
+            <select name="Role" id="role">
+              <option value="User">User</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+          <p class="signUp-link">
+            If you have not an account?
+            <a href="/SignUpPage/signUp.html">SignUp</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SkillSadhana</h2>
+          <p>Your gateway to smart learning & career growth.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@skillsadhana.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Address: Bangalore, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kGU_bHyoW4ITdro3LTbTbmN9RMeZBO70gA&s"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgfKNwFj7O66Qn-tIw87Yzo1A3DNh9rGq5g&s"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SkillSadhana. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

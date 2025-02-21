@@ -1,0 +1,141 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4ec;
+    color: #333;
+}
+
+/*  Navigation Style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #444;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links a:hover {
+    color: #eb5939;
+}
+
+nav .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+}
+
+nav .hamburger-menu div {
+    height: 3px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation Bar for Small Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    nav .hamburger-menu {
+        display: flex;
+        order: 1;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 100;
+    }
+
+    nav .nav-links a {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+}
+
+.notification-container {
+    margin: 30px auto 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.notification {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pending {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: white;
+}
+
+.pending:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.5);
+}
+
+.approved {
+    background: linear-gradient(135deg, #4caf50, #2e8b57);
+    color: white;
+}
+
+.approved:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(46, 139, 87, 0.5);
+}

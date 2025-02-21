@@ -1,0 +1,598 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4ec;
+    color: #333;
+}
+
+/*  Navigation Style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+nav .nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #444;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links a:hover {
+    color: #eb5939;
+}
+
+
+nav .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+}
+
+nav .hamburger-menu div {
+    height: 3px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation Bar for Small Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    nav .hamburger-menu {
+        display: flex;
+        order: 1;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 100;
+    }
+
+    nav .nav-links a {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+}
+
+/*course contaiiner section*/
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.course-info {
+    width: 50%;
+}
+
+.course-info h1 {
+    font-size: 32px;
+    color: #eb5939;
+}
+
+.course-info h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.course-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-info ul li {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.video-card {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-preview {
+    position: relative;
+}
+
+.video-preview img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enroll-btn {
+    background-color: #eb5939;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+
+.enroll-btn:hover {
+    background-color: #d94e2e;
+    transform: scale(1.05);
+}
+
+/* Responsive Design for course container */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .course-info {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .video-card {
+        width: 100%;
+    }
+
+    .course-info h1 {
+        font-size: 28px;
+
+    }
+
+    .course-info h3 {
+        font-size: 20px;
+
+    }
+
+    .course-info ul li {
+        font-size: 16px;
+
+    }
+
+    .play-button {
+        padding: 8px 16px;
+        font-size: 14px;
+
+    }
+
+    .enroll-btn {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-info h1 {
+        font-size: 24px;
+    }
+
+    .course-info h3 {
+        font-size: 18px;
+
+    }
+
+    .course-info ul li {
+        font-size: 14px;
+
+    }
+
+    .enroll-btn {
+        font-size: 14px;
+
+        padding: 10px 15px;
+
+    }
+
+    .play-button {
+        font-size: 12px;
+
+        padding: 6px 12px;
+
+    }
+}
+
+
+
+/*course content section*/
+.course-content {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 20px 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-content h2 {
+    color: #eb5939;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.course-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.lesson {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lesson .icon {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lesson-content {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    background: #fff;
+    border-left: 3px solid #eb5939;
+    margin-bottom: 10px;
+}
+
+/*course description */
+.course-description {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.course-description h2 {
+    color: #eb5939;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.course-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*instructor section*/
+.instructor-section {
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.instructor-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructor-image {
+    width: 30%;
+}
+
+.instructor-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-info {
+    width: 65%;
+    padding-left: 30px;
+}
+
+.instructor-info h2 {
+    font-size: 32px;
+    color: #eb5939;
+    /* Consistent color with course description */
+    margin-bottom: 10px;
+}
+
+.instructor-info h3 a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.instructor-info h3 a:hover {
+    color: #eb5939;
+}
+
+.instructor-info .instructor-title {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.instructor-info .instructor-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.instructor-info .instructor-stats span {
+    font-size: 16px;
+    color: #666;
+}
+
+.instructor-info .instructor-bio {
+    font-size: 16px;
+    color: #444;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+/* Responsive design for instructor */
+@media (max-width: 768px) {
+    .instructor-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .instructor-image {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .instructor-info {
+        width: 100%;
+        padding-left: 0;
+
+    }
+
+    .instructor-info h2 {
+        font-size: 28px;
+    }
+
+    .instructor-info h3 a {
+        font-size: 20px;
+    }
+
+    .instructor-info .instructor-title {
+        font-size: 16px;
+    }
+
+    .instructor-info .instructor-stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .instructor-info .instructor-stats span {
+        font-size: 14px;
+    }
+
+    .instructor-info .instructor-bio {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .instructor-info h2 {
+        font-size: 24px;
+    }
+
+    .instructor-info h3 a {
+        font-size: 18px;
+    }
+
+    .instructor-info .instructor-title {
+        font-size: 14px;
+    }
+
+    .instructor-info .instructor-stats span {
+        font-size: 12px;
+    }
+
+    .instructor-info .instructor-bio {
+        font-size: 14px;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-logo, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    margin: 15px;
+    min-width: 220px;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    color: #eb5939;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #eb5939;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-social a img {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 16px;
+    height: 100px;
+    color: white;
+    background-color: black;
+}
+
+/* Responsive Layout for footer */
+@media (max-width: 1024px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-logo h2 {
+        font-size: 24px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+    .footer-contact p {
+        font-size: 14px;
+    }
+
+    .footer-social a img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}

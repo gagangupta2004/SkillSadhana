@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructor Course Management</title>
+    <link rel="stylesheet" href="manageCourse.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+  </head>
+  <body>
+    <!---Navigation bar-->
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#">Notifications</a>
+        <a href="#">Help</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <div class="container">
+      <h2>Manage Your Courses</h2>
+      <button class="btn" onclick="openModal()">Add Course</button>
+
+      <div class="modal" id="courseModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h3>Create a Course</h3>
+          <form id="courseForm">
+            <label for="courseName">Course Title</label>
+            <input type="text" id="courseName" required />
+
+            <label for="courseDescription">Course Description</label>
+            <textarea id="courseDescription" rows="3" required></textarea>
+
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" required />
+
+            <button type="submit" class="btn">Create Course</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="course-list">
+        <h3>Your Courses</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Start Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="courses"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="manageCourse.js"></script>
+  </body>
+</html>

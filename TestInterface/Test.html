@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skillsadhna Test Interface</title>
+    <link rel="stylesheet" href="Test.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+    <script src="Test.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#">Notifications</a>
+        <a href="#">Help</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <!--Test container-->
+    <div class="container">
+      <div class="timer" id="timer">Time Left: 15:00</div>
+      <div class="question">
+        <p>1. What is the capital of France?</p>
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q1" /> A) Berlin</label>
+        <label><input type="radio" name="q1" /> B) Madrid</label>
+        <label><input type="radio" name="q1" /> C) Paris</label>
+        <label><input type="radio" name="q1" /> D) Rome</label>
+      </div>
+      <hr style="width: 100%; text-align: left; margin-left: 0" />
+      <div class="question">
+        <p>2. What is the capital of France?</p>
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q2" /> A) Berlin</label>
+        <label><input type="radio" name="q2" /> B) Madrid</label>
+        <label><input type="radio" name="q2" /> C) Paris</label>
+        <label><input type="radio" name="q2" /> D) Rome</label>
+      </div>
+      <hr style="width: 100%; text-align: left; margin-left: 0" />
+
+      <div class="question">
+        <p>3. What is the capital of France?</p>
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q3" /> A) Berlin</label>
+        <label><input type="radio" name="q3" /> B) Madrid</label>
+        <label><input type="radio" name="q3" /> C) Paris</label>
+        <label><input type="radio" name="q3" /> D) Rome</label>
+      </div>
+      <hr style="width: 100%; text-align: left; margin-left: 0" />
+      <button class="submit-btn">Submit Answer</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSadhana</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/HomePage/Favicon Skillsadhana.png"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!---Navigation bar-->
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/HomePage/index.html">Home</a>
+        <a href="/AboutPage/about.html">About</a>
+        <a href="/HelpSupport/helpSupport.html">Help</a>
+        <a href="/LoginPage/Login.html">Login</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <div class="main-section">
+      <div class="text-content">
+        <h1>Stay <span>ahead</span> of the LMS(Learning Managment System).</h1>
+        <p>
+          LMS act as a central platform for all learning activities,from course
+          creation and delivery to tracking progress and generating reports.
+        </p>
+        <div class="subscribe">
+          <input type="email" placeholder="Enter Your Email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="video-container">
+        <video controls muted autoplay loop>
+          <source src="/HomePage/background.mp4" type="video/mp4" />
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <!--Slider Section-->
+    <div class="testimonial-section">
+      <h2>What People Are Saying</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <p>"Not a day goes by without reading your newsletter."</p>
+          <div class="author">- Writer</div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "The Neuron is hilarious, entertaining, educational, and informative
+            all at the same time."
+          </p>
+          <div class="author">- Software Developer</div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "I think I subscribe to 1,000 newsletters and yours is the only one
+            I read."
+          </p>
+          <div class="author">- Designer</div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Quick and digestible. I look forward to reading every morning
+            before work."
+          </p>
+          <div class="author">- Creator</div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            "The Neuron is hilarious, entertaining, educational, and informative
+            all at the same time."
+          </p>
+          <div class="author">- Software Developer</div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "The Neuron is hilarious, entertaining, educational, and informative
+            all at the same time."
+          </p>
+          <div class="author">- Software Developer</div>
+        </div>
+      </div>
+    </div>
+    <!--about section-->
+    <div class="about-section">
+      <div class="video-container">
+        <video controls muted autoplay loop>
+          <source src="/HomePage/about video.mp4" type="video/mp4" />
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="about-text">
+        <h1>About Us</h1>
+        <p>
+          A learning management system (LMS) is a software application or
+          web-based technology used to plan, implement and assess a specific
+          learning process. In its most common form, an LMS consists of a server
+          that performs the base functionality and a user interface (UI).
+          Typically, an LMS provides an instructor with a way to create and
+          deliver content, monitor student participation and assess student
+          performance. It might also provide students with interactive features,
+          such as threaded discussions, video conferencing and discussion
+          forums. Businesses, government agencies, and traditional and online
+          schools and higher education institutions often use these systems.
+        </p>
+      </div>
+    </div>
+    <!--team Section-->
+    <div class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="/InstructorDashboard/profile.webp " alt="Team Member 1" />
+          <h3>Satvik Dubey</h3>
+          <p>Backend Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="/InstructorDashboard/profile.webp" alt="Team Member 2" />
+          <h3>Kanhaiya Jee</h3>
+          <p>DevOps Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="/InstructorDashboard/profile.webp" alt="Team Member 3" />
+          <h3>Gagan Gupta</h3>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="/InstructorDashboard/profile.webp" alt="Team Member 4" />
+          <h3>Nikhil Pandey</h3>
+          <p>UI Designer</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>SkillSadhana</h2>
+          <p>Your gateway to smart learning & career growth.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@skillsadhana.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Address: Bangalore, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kGU_bHyoW4ITdro3LTbTbmN9RMeZBO70gA&s"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgfKNwFj7O66Qn-tIw87Yzo1A3DNh9rGq5g&s"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SkillSadhana. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
