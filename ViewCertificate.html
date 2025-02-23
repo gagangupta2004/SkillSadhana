@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Certificate</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      .certificate-container img {
+        max-width: 90%;
+        height: auto;
+        border: 2px solid #ccc;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      .back-button {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 15px;
+        background: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Certificate Preview</h1>
+    <div class="certificate-container">
+      <img id="certificate-img" src="" alt="Certificate" />
+    </div>
+    <br />
+    <a href="myCertifications.html" class="back-button"
+      >Back to Certifications</a
+    >
+
+    <script>
+      // Get the image URL from the query parameter
+      const params = new URLSearchParams(window.location.search);
+      const imgSrc = params.get("img");
+
+      // Display the image if a valid source is provided
+      if (imgSrc) {
+        document.getElementById("certificate-img").src = imgSrc;
+      } else {
+        document.getElementById("certificate-img").alt = "No Certificate Found";
+      }
+    </script>
+  </body>
+</html>
