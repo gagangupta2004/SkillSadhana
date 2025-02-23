@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Discussion Forum - Skillsadhna</title>
+    <link rel="stylesheet" href="courseFeedback.css" />
+  </head>
+  <body>
+    <!---Navigation bar-->
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/DashboardPage/Dashboard.html">Dashboard</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <div class="discussion-container">
+      <h1>Course Feedback Form</h1>
+      <form id="discussion-form">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select a Course --</option>
+          <option value="fullstack">Full Stack Web Development</option>
+          <option value="ai_ml">AI & ML Fundamentals</option>
+          <option value="data_science">Data Science with Python</option>
+        </select>
+
+        <label for="name">Your Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="discussion">Your Feedback / Improvement:</label>
+        <textarea
+          id="discussion"
+          name="discussion"
+          rows="4"
+          placeholder="Your feedback..."
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
