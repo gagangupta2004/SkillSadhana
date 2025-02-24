@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course performance - Skillsadhna</title>
+    <link rel="stylesheet" href="coursePerfom.css" />
+  </head>
+  <body>
+    <!---Navigation bar-->
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/InstructorDashboard/instructorDashboard.html">Dashboard</a>
+        <a href="#">Help</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <div class="class-container">
+      <h1>Classes / DO180-APAC-NIISAT00027</h1>
+
+      <div class="class-details">
+        <table>
+          <tr>
+            <th>Class Name</th>
+            <th>Course Title</th>
+            <th>Students</th>
+            <th>Date Range</th>
+            <th>Label</th>
+          </tr>
+          <tr>
+            <td><strong>DO180-APAC-NIISAT00027</strong></td>
+            <td>DO180 - Red Hat OpenShift Administration I</td>
+            <td>10</td>
+            <td>Dec 18, 2024 - Jan 28, 2025</td>
+            <td><button class="edit-class">Edit Class</button></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="students-list">
+        <h2>Students</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Student ID</th>
+              <th>Name</th>
+              <th>Class Name</th>
+              <th>Progress</th>
+              <th>Grades</th>
+              <th>Last Accessed</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>09888kk</td>
+              <td>John Doe</td>
+              <td>DO180-APAC-NIISAT00027</td>
+              <td><progress value="0" max="100"></progress></td>
+              <td>0%</td>
+              <td>-</td>
+              <td><button class="delete">Delete</button></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>gajendrapatelred</td>
+              <td>Jane Smith</td>
+              <td>DO180-APAC-NIISAT00027</td>
+              <td><progress value="0" max="100"></progress></td>
+              <td>0%</td>
+              <td>-</td>
+              <td><button class="delete">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
