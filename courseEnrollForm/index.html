@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Enroll Form -Skillsadhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SkillSadhana</div>
+
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="/LoginPage/Login.html">Login</a>
+      </div>
+    </nav>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    <div class="enrollment-container">
+      <h2>Course Enrollment Form</h2>
+      <form id="enrollmentForm">
+        <!-- Course Selection -->
+        <label for="course">Select Course</label>
+        <select id="course" required>
+          <option value="" disabled selected>Choose a Course</option>
+          <option value="web-development">Web Development</option>
+          <option value="data-science">Data Science</option>
+          <option value="cloud-computing">Cloud Computing</option>
+          <option value="ui-ux-design">UI/UX Design</option>
+        </select>
+
+        <!-- Full Name -->
+        <label for="fullName">Full Name</label>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <!-- Phone -->
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <!-- Enrollment Date -->
+        <label for="enrollDate">Enrollment Date</label>
+        <input type="date" id="enrollDate" required />
+
+        <!-- Submit Button -->
+        <button type="submit" class="enroll-btn">Enroll Now</button>
+      </form>
+    </div>
+  </body>
+</html>

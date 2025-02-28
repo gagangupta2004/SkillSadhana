@@ -34,6 +34,10 @@
       hamburgerMenu.addEventListener("click", () => {
         navLinks.classList.toggle("active");
       });
+
+      function flipCard(card) {
+        card.classList.toggle("flipped");
+      }
     </script>
 
     <!--about section-->
@@ -61,7 +65,9 @@
         </p>
       </div>
     </div>
-    <div class="team-section">
+
+    <!--
+      <div class="team-section">
       <h2>Meet Our Team</h2>
       <div class="team-grid">
         <div class="team-member">
@@ -83,6 +89,83 @@
           <img src="#" alt="Team Member 4" />
           <h3>Nikhil Pandey</h3>
           <p>UI Designer</p>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <div class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="card-inner">
+            <!-- Front Side -->
+            <div class="card-front">
+              <img src="team-member.jpg" alt="Team Member" />
+              <h3>John Doe</h3>
+              <p>Senior Developer</p>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back">
+              <h3>About John</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                distinctio eaque sapiente, assumenda, nulla veritatis sed a
+                laudantium rerum ea mollitia dolorem quae aliquam ipsa autem
+                accusamus cupiditate, fuga eligendi. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Fuga quae ut amet, dicta
+                architecto voluptas commodi maiores, nam vero laboriosam hic
+                alias quo possimus obcaecati, deserunt veniam perspiciatis
+                molestias neque?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="team-member2.jpg" alt="Team Member" />
+              <h3>Jane Smith</h3>
+              <p>UI/UX Designer</p>
+            </div>
+            <div class="card-back">
+              <h3>About Jane</h3>
+              <p>
+                Jane creates amazing user experiences with her design expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="team-member2.jpg" alt="Team Member" />
+              <h3>Jane Smith</h3>
+              <p>UI/UX Designer</p>
+            </div>
+            <div class="card-back">
+              <h3>About Jane</h3>
+              <p>
+                Jane creates amazing user experiences with her design expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/InstructorDashboard/profile.webp" alt="Team Member" />
+              <h3>Jane Smith</h3>
+              <p>UI/UX Designer</p>
+            </div>
+            <div class="card-back">
+              <h3>About Jane</h3>
+              <p>
+                Jane creates amazing user experiences with her design expertise.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

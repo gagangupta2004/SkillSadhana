@@ -1,16 +1,23 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    const progressBars = document.querySelectorAll(".progress");
+document.querySelectorAll(".course-card").forEach((card) => {
+    let slider = card.querySelector(".progress-slider");
+    let progress = card.querySelector(".progress");
+    let percentageText = card.querySelector(".progress-percentage");
 
-    progressBars.forEach((bar) => {
-        const width = bar.closest(".course-card").dataset.progress;
-        bar.style.width = width + "%";
-    });
+    function updateProgress() {
+        let value = slider.value;
+        progress.style.width = value + "%";
+        percentageText.textContent = value + "%";
+    }
+
+    slider.addEventListener("input", updateProgress);
+    updateProgress(); // Initialize on load
 });
 
 
 
-      const hamburgerMenu = document.getElementById("hamburger-menu");
+
+const hamburgerMenu = document.getElementById("hamburger-menu");
       const navLinks = document.getElementById("nav-links");
 
       hamburgerMenu.addEventListener("click", () => {

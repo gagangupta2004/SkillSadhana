@@ -36,11 +36,15 @@
       });
     </script>
     <div class="container">
-      <h2>Manage Your Courses</h2>
-      <button class="btn" onclick="openModal()">Add Course</button>
-      <button class="btn" onclick="openModal()">Update Course</button>
-      <button class="btn" onclick="openModal()">Delete Course</button>
+      <div class="container1">
+        <h2>Manage Your Courses</h2>
+        <div class="button-group">
+          <button class="btn" onclick="openModal()">Add Course</button>
+          <button class="btn" onclick="openUpdateModal()">Update Course</button>
+        </div>
+      </div>
 
+      <!-- Create Course Modal -->
       <div class="modal" id="courseModal">
         <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
@@ -60,6 +64,26 @@
         </div>
       </div>
 
+      <!-- Update Course Modal -->
+      <div class="modal" id="updateCourseModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeUpdateModal()">&times;</span>
+          <h3>Update Course</h3>
+          <form id="updateCourseForm">
+            <label for="updateCourseName">Course Title</label>
+            <input type="text" id="updateCourseName" required />
+
+            <label for="updateCourseDescription">Course Description</label>
+            <textarea id="updateCourseDescription" rows="3" required></textarea>
+
+            <label for="updateStartDate">Start Date</label>
+            <input type="date" id="updateStartDate" required />
+
+            <button type="submit" class="btn1">Update Course</button>
+          </form>
+        </div>
+      </div>
+
       <div class="course-list">
         <h3>Your Courses</h3>
         <table>
@@ -69,7 +93,7 @@
               <th>Description</th>
               <th>Start Date</th>
               <th>Status</th>
-              <th>Actions</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody id="courses"></tbody>

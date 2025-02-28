@@ -1,0 +1,212 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f4ec;
+    color: #333;
+
+}
+
+/*  Navigation Style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+nav .nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #444;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links a:hover {
+    color: #eb5939;
+}
+
+
+nav .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+}
+
+nav .hamburger-menu div {
+    height: 3px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation Bar for Small Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    nav .hamburger-menu {
+        display: flex;
+        order: 1;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 100;
+    }
+
+    nav .nav-links a {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* Enrollment Container */
+.enrollment-container {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 25px;
+    margin: 50px auto 20px;
+    /* Ensures space below navigation */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.enrollment-container h2 {
+    color: #eb5939;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #eb5939;
+    box-shadow: 0 0 10px rgba(235, 89, 57, 0.4);
+}
+
+/* Button */
+.enroll-btn {
+    background: #eb5939;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.enroll-btn:hover {
+    background: #d44e30;
+    box-shadow: 0 4px 8px rgba(235, 89, 57, 0.5);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for Small Devices */
+@media (max-width: 768px) {
+    .enrollment-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .enrollment-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .enrollment-container h2 {
+        font-size: 1.5rem;
+    }
+
+    input, select {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .enroll-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

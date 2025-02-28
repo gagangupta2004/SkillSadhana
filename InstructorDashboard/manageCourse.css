@@ -114,21 +114,30 @@ nav .hamburger-menu div {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #2c3e50;
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.button-group {
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
 
 .btn {
-    width: 395px;
+    width: 100%;
+    padding: 10px 15px;
     background-color: #eb5939;
     color: white;
     border: none;
-    padding: 10px 15px;
     cursor: pointer;
-    font-weight: 700;
     border-radius: 5px;
 }
+
 
 .btn1 {
 
